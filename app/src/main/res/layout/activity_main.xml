@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/register_movie"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="#F47B55"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="registerMovie"
+        android:text="@string/register_movie"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/display_movie"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F47B55"
+        android:onClick="displayMovie"
+        android:text="@string/display_movies"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/register_movie"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favourites"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F47B55"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="favourites"
+        android:text="@string/favourites"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_movie" />
+
+    <Button
+        android:id="@+id/edit_movies"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#F47B55"
+        android:onClick="editMovies"
+        android:text="@string/edit_movies"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourites"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F47B55"
+        android:onClick="search"
+        android:text="@string/search"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/favourites"
+        app:layout_constraintTop_toBottomOf="@+id/display_movie" />
+
+    <Button
+        android:id="@+id/ratings"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#F47B55"
+        android:onClick="ratings"
+        android:text="@string/ratings"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_movies"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="304dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/movieops"
+        android:textAlignment="center"
+        android:textColor="#675959"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/register_movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

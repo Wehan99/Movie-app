@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.westminster.mobilecw2">
+    //setting child intents for parent activity
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileCW2">
+        <activity android:name=".Ratings" android:label = "Ratings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity" />
+        </activity>
+        <activity android:name=".Search" android:label = "Search"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity"/>
+        </activity>
+
+        <activity android:name=".EditMovies" android:label = "Edit Movies"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity" />
+        </activity>
+
+        <activity android:name=".Favourites" android:label = "Favourites"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity"/>
+        </activity>
+
+        <activity android:name=".DisplayMovies" android:label = "Display Movies"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity" />
+        </activity>
+
+        <activity android:name=".RegisterMovie" android:label = "Register Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "uk.ac.westminster.mobilecw2.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

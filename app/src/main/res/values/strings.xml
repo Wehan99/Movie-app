@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movieops</string>
+    <string name="register_movie">Register Movie</string>
+    <string name="ratings">Ratings</string>
+    <string name="search">Search</string>
+    <string name="edit_movies">Edit Movies</string>
+    <string name="favourites">Favourites</string>
+    <string name="display_movies">Display Movies</string>
+    <string name="movieops">Movieops</string>
+    <string name="enter_movie_details">Enter Movie Details</string>
+    <string name="enter_movie_name">Enter movie name</string>
+    <string name="movie_title">Movie Title :</string>
+    <string name="director">Director :</string>
+    <string name="year">Year :</string>
+    <string name="list_of_actors_actresses">List of actors/ actresses :</string>
+    <string name="reviews">Reviews :</string>
+    <string name="enter_director_name">Enter director name</string>
+    <string name="enter_year">Enter Year after 1895</string>
+    <string name="enter_list">Enter List</string>
+    <string name="your_review">Your Review</string>
+    <string name="save">Save</string>
+    <string name="rate_10_out_of">Rate (1-10)</string>
+    <string name="rateText">Ratings :</string>
+    <string name="invalid_input">Invalid Input!</string>
+    <string name="please_re_enter">Please re-enter</string>
+    <string name="successful">Successful!</string>
+    <string name="no_data">No Data!</string>
+    <string name="enter_data">Enter Data</string>
+</resources>
